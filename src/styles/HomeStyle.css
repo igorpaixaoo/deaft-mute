@@ -1,0 +1,90 @@
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 70px;
+  transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p{
+  font-size: 10pt;
+  position: absolute;
+  top: 2%;
+  left: 91%;
+}
+
+.footer span{
+  font-weight: bold;
+}
+
+#logo{
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+.home img{
+  width: 100vh;
+}
+
+.home button{
+  width: 270px;
+  height: 55px;
+  font-size: 18pt;
+  font-weight: lighter;
+  color: #0b14cb;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.home button:hover, .home button:focus{
+  background-color: #0b14cb;
+  border: 1px solid ;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .home{
+    top: 40%;
+  }
+
+  .home img{
+    width: 70vh;
+  }
+
+  .home button{
+    width: 200px;
+    height: 50px;
+    font-size: 15pt;
+  }
+}
